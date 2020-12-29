@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+body{ background-image:url(../images/bg.jpg); background-repeat:no-repeat; background-size:100% 100%;  background-attachment: fixed;}
+.top{ width:100%; height:40px; background:-webkit-linear-gradient(left,#999,#CCC,#999);}
+.left-top-char{ width:500px; height:40px; float:left;}
+.left-top-char img{ width: 240px; height: 20px; margin-left: 17px; margin-top: 9px; opacity: 0.7; }
+.login{ width:100px; height:40px;  float:right; transition: all 0.5s;}
+.login a:link{ color:#000;}
+.login a:visited{ color:#000;}
+.login a:hover{ color:#39F; transition: all 0.35s;}
+.pictures{ width:100%; height:1380px; opacity: 1; position:absolute;}
+.pictures img{ width:100%; height:auto; }
+.news{ width:615px; height:350px; background-color:#CCC; position:absolute; margin-top:230px; margin-left:78px; border-top:2px solid #CCC; border-image: -webkit-linear-gradient(left,#009,#0FF,#009) 20 20 20; border-bottom:2px solid #CCC; border-image: -webkit-linear-gradient(left,#009,#0FF,#009) 20 20 20;}
+
+.game-bottom{ width:590px; height:350px; position:absolute; margin-left:730px; margin-top:230px;  float:left; opacity: 1;  float:left; transition: all 0.5s;}
+.game-bottom:hover{ box-shadow: 0px 0px 2px 5px rgba(255, 0, 255, 1);}
+
+.backblack{ width:100%; height:425px; background:-webkit-linear-gradient(left,#000,#000); position:absolute; margin-top:190px; opacity: 0.4;}
+.recent-game{ width:590px; height:350px;  position:absolute; margin-top:230px; margin-left:730px; opacity: 0.5; }
+
+.recent-game img{ width:100%; height:100%;}
+.match-introduce{ width:590px; height:350px; position:absolute; margin-left:730px; margin-top:230px; opacity:1; border-bottom:2px solid #CCC; border-image: -webkit-linear-gradient(left,#009,#F3F,#009) 20 20 20; border-top:2px solid #CCC; border-image: -webkit-linear-gradient(left,#009,#F3F,#009) 20 20 20; }
+.match-introduce h1{ font-family:Verdana, Geneva, sans-serif; font-size: 50px; color:#FC0; opacity:0.6; margin-left:25px;}
+.match-introduce p{ font-family: eras demi itc; font-size: 20px; color:#FFF; opacity:0.5; text-align:center;}
+.team-logo{ width:450px; height:200px;  margin-top:0px; margin-left:60px; opacity: 1;}
+.team-logo img{float:left; }
+.bottom{ width:100%; height:350px; background-color:#00F; position:absolute; margin-top:230px; float:left; opacity:0;}
+.video-range{ width:511px; height:287.5px; position:absolute; margin-left:809px; margin-top:615px;  overflow: hidden; border-bottom:2px solid #CCC; border-image: -webkit-linear-gradient(left,#009,#0FF,#009) 20 20 20; border-top:2px solid #CCC; border-image: -webkit-linear-gradient(left,#009,#0FF,#009) 20 20 20; transition: all 0.5s;}
+.video-range:hover{ box-shadow: 0px 0px 2px 6px rgba(0, 255, 255, 1);}
+.video-pic{ width:511px; height:287.5px; background-color:#FFF; position:absolute;  overflow: hidden;}
+.video-pic { cursor: pointer; transition: all 0.5s;}
+.video-pic:hover{ transform: scale(1.13);}
+.video-pic img{ width:100%; height:100%;}
+.video-char{ width:511px; height:50px; background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)); position:absolute; margin-top:237.5px;}
+
+.match-news-range{ width:287.5px; height:337.5px; position:absolute;  margin-left:78px; margin-top:615px; overflow: hidden; border-bottom:2px solid #CCC; border-image: -webkit-linear-gradient(left,#009,#0FF,#009) 20 20 20; border-top:2px solid #CCC; border-image: -webkit-linear-gradient(left,#000,#F00,#000) 20 20 20; transition: all 0.5s;}
+.match-news{ width:287.5px; height:337.5px; background-color:#FFF; position:absolute;}
+.match-news:hover{ transform: scale(1.13);}
+.match-news-range:hover{ box-shadow: 0px 0px 2px 6px rgba(255, 0, 0, 1);}
+.match-news{ cursor: pointer; transition: all 0.5s;}
+.match-news img{ width:100%; height:100%;}
+.mvp{ width:287.5px; height:100px; background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6),rgba(0,0,0,1)); position:absolute; margin-top:237.5px; }
+.mvp-top-red{ width:287.5px; height:100px; background:linear-gradient(rgba(255,0,0,0.5),rgba(255,0,0,0)); position:absolute;}
+
+.match-news-2-range{ width:363px; height:312.5px; position:absolute;  margin-left:405.5px; margin-top:615px; overflow: hidden; border-bottom:2px solid #CCC; border-image: -webkit-linear-gradient(left,#009,#0FF,#009) 20 20 20; border-top:2px solid #CCC; border-image: -webkit-linear-gradient(left,#009,#F0F,#009) 20 20 20; transition: all 0.5s;}
+.match-news-2{ width:363px; height:312.5px; background-color:#003; opacity:0.7;}
+.match-news-2-range:hover{ box-shadow: 0px 0px 2px 6px rgba(0, 255, 255, 1);}
+.match-news-2{ cursor: pointer; transition: all 0.5s;}
+.match-news-2 img{ width:100%; height:100%;}
+
+.notice{ width:100%; height:50px; position:absolute; background-color:#000; background:linear-gradient(rgba(0,0,255,0.5),rgba(0,0,255,0));}
+
+.super-cup{ width:100%; height:420px; position:absolute; margin-top:960px;}
+.super-cup-black{ width:100%; height:220px; background:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1)); position:absolute; margin-top:200px;}
+.super-cup-char{ width:100%; height:420px; position:absolute;}
+.supercup-team1{ width:500px; height:350px; position:absolute; background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)); margin-top:150px; margin-left:70px; opacity:1; border-top:1px solid #000; border-image: -webkit-linear-gradient(left,#000,#000,#FFF,#000,#000) 20 20 20;}
+.supercup-team2{ width:500px; height:350px; position:absolute; background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)); margin-top:150px; margin-left:830px; opacity:1; border-top:1px solid #000; border-image: -webkit-linear-gradient(left,#000,#000,#FFF,#000,#000) 20 20 20;}
+.supercup-logoa{ width:120px; height:120px; position:absolute; background-color:#FFF; margin-top:200px; margin-left:508px; opacity:1;}
+.supercup-logob{ width:120px; height:120px; position:absolute; background-color:#FFF; margin-top:200px; margin-left:770px; opacity:1;}
+.supercup-score{ width:120px; height:120px; position:absolute;  margin-top:200px; margin-left:639px; opacity:1;}
+
+.others{ width:100%; height:900px; background-color:#FFF; margin-top:1350px;}
+.leader{ width:100%; height:500px; background-color:#FFF; margin-top:100px; position:absolute;}
+
+.bottom{ width:100%; height:300px; position:absolute; margin-top:500px; opacity:1;}
+
+
+.login a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: monospace;
+  display: block;
+  padding: 10.5px 30px;
+  font-size: 17px;
+  transition: background-color 0.5s ease-in-out;
+  font-family: "Raleway", sans-serif;
+}
+
+.logo{ width:150px; height:150px; margin-left:150px; margin-top:20px; float:left; position:relative;}
+.logo img{ width: 115px; height: 115px; margin-left: 22px; margin-top: 20px;}
+.menu{ width:1000px; height:50px;  float:left; margin-left:100px; margin-top:100px; position:relative;}
+ul {
+  list-style: none;
+}
+nav {
+  height: 47.5px;
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.15);
+  text-align: center;
+  
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.main > li {
+  margin: 0 2%;
+}
+.main a {
+  text-decoration: none;
+  color: #ffe;
+  text-transform: capitalize;
+  font-family: monospace;
+  display: block;
+  padding: 11px 25px;
+  font-size: 17px;
+  transition: background-color 0.5s ease-in-out;
+  font-family: "Raleway", sans-serif;
+}
+
+.main a:hover {
+  background-color: #999;
+}
+
+.drop li {
+  opacity: 0;
+  transform-origin: top center;
+}
+
+.drop li a {
+  background-color: rgba(23, 23, 50, 0.7);
+  padding: 10px 0;
+}
+/*------------- menu1 animation -------------------*/
+
+.main li:hover .menu1 li:first-of-type {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu1 li:nth-of-type(2) {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu1 li:nth-of-type(3) {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu1 li:last-of-type {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes menu1 {
+  from {
+    opacity: 0;
+    transform: translateX(30px) rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+  }
+}
+
+/*------------- menu2 animation -------------------*/
+
+.main li:hover .menu2 li:first-of-type {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu2 li:nth-of-type(2) {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu2 li:nth-of-type(3) {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu2 li:last-of-type {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes menu2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*------------- menu3 animation -------------------*/
+
+.main li:hover .menu3 li:first-of-type {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu3 li:nth-of-type(2) {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu3 li:nth-of-type(3) {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu3 li:last-of-type {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes menu3 {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*------------- menu4 animation -------------------*/
+
+.main li:hover .menu4 li:first-of-type {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu4 li:nth-of-type(2) {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.main li:hover .menu4 li:nth-of-type(3) {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.main li:hover .menu4 li:last-of-type {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes menu4 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+/*------------- menu5 animation -------------------*/
+
+.main li:hover .menu5 li:first-of-type {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu5 li:nth-of-type(2) {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.main li:hover .menu5 li:nth-of-type(3) {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.main li:hover .menu5 li:last-of-type {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes menu5 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+/*------------- menu6 animation -------------------*/
+
+.main li:hover .menu6 li:first-of-type {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.main li:hover .menu6 li:nth-of-type(2) {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.main li:hover .menu6 li:nth-of-type(3) {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.main li:hover .menu6 li:last-of-type {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes menu6 {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* my button style */
+.white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.35s ease-in-out;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-family: sans-serif;
+}
+
+.white-mode:hover {
+  background-color: #fff;
+  color: #122;
+}
